@@ -9,8 +9,14 @@ Intro Screencast :
 https://www.youtube.com/watch?v=5MQoJZKXM_s
 
 
+## Run
 
-# Features
+``` sh
+$ docker run -p 8080:8080 -p 9990:9990 mikefaille/keycloak
+```
+
+
+## Features
 
 * SSO and Single Log Out for browser applications
 * Social Broker.  Enable Google, Facebook, Yahoo, Twitter social login with no code required.
