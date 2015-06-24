@@ -9,7 +9,7 @@ ENV JAVA_HOME /usr/lib/jvm/jre
 
 
 WORKDIR /data
-RUN   wget http://downloads.sourceforge.net/project/keycloak/1.2.0.Final/keycloak-1.2.0.Final.tar.gz && tar xvfp keycloak-1.2.0.Final.tar.gz &&  rm keycloak-1.2.0.Final.tar.gz
+RUN wget http://downloads.sourceforge.net/project/keycloak/1.3.1.Final/keycloak-1.3.1.Final.tar.gz && tar xvfp keycloak-1.3.1.Final.tar.gz &&  rm keycloak-1.3.1.Final.tar.gz
 
-CMD ["/data/keycloak-1.2.0.Final/bin/standalone.sh", "-b", "0.0.0.0"]
+CMD ["/data/keycloak-1.3.1.Final/bin/standalone.sh", "-b", "0.0.0.0"]
 EXPOSE 8080 9990
